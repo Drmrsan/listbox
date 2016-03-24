@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>Edit List</h2>
+			<%= simple_form_for @list do |f| %>
+
+				<%= f.input :title %>
+				<%= f.input :description %>
+
+				<%= f.button :submit %>
+
+			<% end %>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-6 col-md-offset-3">
+			
+			<% @lists.each do |list| %>
+				<div class="well list-box">
+					<%= link_to list.title, list_path(list) %> <span class="created_by"><p>created by: <%= list.user.email %></p></span>
+				</div>
+			<% end %>
+
+		</div>
+	</div>
+</div>
+
