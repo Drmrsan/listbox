@@ -19,6 +19,7 @@ before_action :find_list, only: [:edit, :show, :update, :destroy]
 	end
 
 	def show
+		
 	end
 
 	def edit

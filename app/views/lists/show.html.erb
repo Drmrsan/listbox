@@ -12,6 +12,9 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<%= render 'lists/list_item_form' %>
+			<%= @list.list_items.each do |item| %>
+				<%= item.title %>
+			<% end %>
 		</div>
 	</div>
 </div>
